@@ -1,15 +1,15 @@
 <?php
 	$now = new DateTime();		
-    	$token = $_POST['token'];
+    	$token = $_POST['_token'];
 	$uuid = $_POST['uuid'];
 	$email= $_POST['email'];
 
-	echo "token : $token<br>" ;	
+	echo "token : $_token<br>" ;	
 	echo "uuid : $uuid<br>" ;	
 	echo "email : $email<br>" ;	
 	echo $now->format('Y-m-d H:i:s');    // MySQL datetime format
 
-	$link = mysqli_connect("localhost", "root", "Villa2018", "shoponline");
+	$link = mysqli_connect("localhost", "user", "password", "shoponline");
 	
 	if (mysqli_connect_errno()) {
 	    printf("Connect failed: %s\n", mysqli_connect_error());
