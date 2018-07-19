@@ -4,7 +4,7 @@
 	$uuid = $_POST['uuid'];
 	$email= $_POST['email'];
 
-	echo "token : $_token<br>" ;	
+	echo "token : $token<br>" ;	
 	echo "uuid : $uuid<br>" ;	
 	echo "email : $email<br>" ;	
 	echo $now->format('Y-m-d H:i:s');    // MySQL datetime format
